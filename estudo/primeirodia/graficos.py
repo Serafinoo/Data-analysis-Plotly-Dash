@@ -23,14 +23,12 @@ fig = make_subplots(
 fig.add_trace(
     go.Bar(
         x=dados["Frequência"],
-        y=dados["FR"]
-        text=dados["FA"]
-        textposition="outside"
-        fig.update_yaxes(tickformat=".0%", row=1, col=1)
+        y=dados["FR"],
+        text=dados["FA"],
+        textposition="outside",
     ),
-    row=1, col=1
 )
-
+fig.update_yaxes(tickformat=".0%", row=1, col=1)
 fig.add_trace(
     go.Pie(
         labels=comidas["Exemplares"],
