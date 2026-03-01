@@ -38,6 +38,7 @@ fig.add_trace(
 )
 
 fig.update_layout(title="Comidas Típicas: 2º EM - Vespertino")
+fig.write_html("grafico.Html")
 fig.show()
 
 #    fig = px.bar(dados, x="Frequência", y="FR", text="FA", title="Frequência de consumo comidas típicas: 2º EM - Vespertino")
