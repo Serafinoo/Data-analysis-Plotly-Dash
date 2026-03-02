@@ -52,5 +52,19 @@ app.layout = html.Div([
     dcc.Graph(figure=fig)
 ])
 
+app.layout = html.Div(
+    className="dashboard-container",
+    children=[
+        html.H1("Dashboard de Pesquisa"),
+
+        html.Div(
+            className="card",
+            children=[
+                dcc.Graph(figure=fig)
+            ]
+        )
+    ]
+)
+
 if __name__ == "__main__":
     app.run(debug=True)
